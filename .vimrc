@@ -77,9 +77,6 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
-colorscheme default 
-set background=dark
-
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
@@ -87,6 +84,8 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
 endif
+
+colorscheme default 
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
